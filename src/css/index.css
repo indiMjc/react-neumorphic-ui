@@ -28,7 +28,7 @@
   transform: scale(0.98);
 }
 .App .test:hover a {
-  box-shadow: -0.7rem -0.7rem 1.5rem #ffffff, 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: -0.45rem -0.45rem 1.5rem #ffffff, 0.45rem 0.45rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 .App .test a {
   box-shadow: -0.4rem -0.4rem 1.5rem #ffffff, 0.4rem 0.4rem 1.5rem rgba(0, 0, 0, 0.1);
