@@ -8,12 +8,11 @@ function App() {
 		<div className='App'>
 			<CardWithButton />
 			<NeuButton
-				margin={'2rem 0 0'}
-				// padding={'1rem'}
+				text={'Submit'}
 				clickFn={testingClick}
-				text={'test'}
-				// color={'green'}
-				// borderRadius={'0rem'}
+				margin={'2rem 0 0'}
+				padding={'1rem'}
+				borderRadius={'0rem'}
 			/>
 		</div>
 	);
