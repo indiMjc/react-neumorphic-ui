@@ -39,7 +39,7 @@
    ```
    <NeuButton
        text={'Submit'}
-       clickFn={testingClick}
+       clickFn={fetchData}
        margin={'2rem 0 0'}
        padding={'1rem'}
        borderRadius={'0rem'}
