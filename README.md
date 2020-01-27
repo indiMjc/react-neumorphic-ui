@@ -1,12 +1,18 @@
-#**required dependancies for use: `emotion` and `@emotion/core`**
+# **Required dependency for use: `@emotion/core`**
+
+###### _Developed on version 10.0.27_
+
+##### Optional dependency for performance: `@emotion/babel-preset-css-prop`, add to `.bablerc` file under `presets` field
 
 ## Components
 
 -  `<NeuButton />`
 
-   -  **Optional** props for styling:
+   -  Optional props for styling (_**all** props take strings_):
 
       -  clickFn (onClick submit function)
+
+      -  type (for `type='submit'` on forms)
 
       -  width
 
