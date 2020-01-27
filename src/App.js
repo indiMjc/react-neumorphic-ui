@@ -7,13 +7,7 @@ function App() {
 	return (
 		<div className='App'>
 			<CardWithButton />
-			<NeuButton
-				text={'Submit'}
-				clickFn={testingClick}
-				margin={'2rem 0 0'}
-				padding={'1rem'}
-				borderRadius={'0rem'}
-			/>
+			<NeuButton text={'Submit'} clickFn={testingClick} margin={'2rem 0 0'} padding={'1rem'} />
 		</div>
 	);
 }
