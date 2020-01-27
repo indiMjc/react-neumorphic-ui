@@ -3,8 +3,8 @@ import { jsx, css } from '@emotion/core';
 
 const NeuButton = props => {
 	const optionalBtnStyles = {
-		// width: props.width,
-		// height: props.height,
+		width: props.width,
+		height: props.height,
 
 		backgroundColor: props.bgColor || 'rgb(235, 245, 252)',
 
