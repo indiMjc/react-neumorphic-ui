@@ -1,4 +1,4 @@
-# **Required dependency for use: `@emotion/core`**
+# **Required dependencies for use: `@emotion/core` (for all components), `react-router-dom` for (`<NeuNavbar />` component)**
 
 ###### _Developed on version 10.0.27_
 
@@ -45,3 +45,5 @@
        borderRadius={'0rem'}
    />
    ```
+
+-  `<NeuNavbar />`
