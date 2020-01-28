@@ -45,7 +45,7 @@ const NeuButton = props => {
 	return (
 		<button
 			type={props.type}
-			disabled={props.disabled || false}
+			disabled={props.disable || false}
 			css={btnStyles}
 			style={{ ...optionalBtnStyles }}
 			onClick={handleClick}
