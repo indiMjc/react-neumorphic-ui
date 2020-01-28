@@ -10,7 +10,7 @@ const NeuNavbar = props => {
 		width: props.containerWidth || '80vw',
 		height: props.containerHeight || '15vh',
 
-		backgroundColor: props.containerBgColor || 'rgb(235, 245, 252)',
+		backgroundColor: props.containerBgColor || 'ecedf1',
 
 		color: props.containerColor,
 		fontSize: props.containerFontSize || '16px',
@@ -19,23 +19,21 @@ const NeuNavbar = props => {
 		margin: props.containerMargin || '0 auto',
 		padding: props.containerPadding || '0 40px',
 
-		border: props.containerBorder || '0.5px solid rgba(235, 245, 252, 0.05)',
 		borderRadius: props.containerRadius || '7px'
 	};
 
 	const optionalLinkStyles = {
-		// backgroundColor: props.linkBgColor || '#ecedf1',
-		backgroundImage: 'linear-gradient(to bottom right, #ebf5fc, #ecedf1)',
+		backgroundColor: props.linkBgColor || '#ecedf1',
 		padding: props.linkPadding || '10px 15px',
 		borderRadius: props.linkRadius || '6px'
 	};
 
 	const containerStyles = css`
 		display: flex;
-		box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.2);
+		box-shadow: -7px -7px 20px #fafbff, 7px 7px 20px #a6abbd;
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px #a6abbd;
 			transform: scale(0.98);
 		}
 
@@ -45,18 +43,18 @@ const NeuNavbar = props => {
 	`;
 
 	const linkStyles = css`
-		box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 6px 6px 15px rgba(0, 0, 0, 0.2);
+		box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 7px 7px 20px #a6abbd;
 		cursor: pointer;
 		text-decoration: none;
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px #a6abbd;
 			transform: scale(0.98);
 		}
 
 		&:active {
 			color: black;
-			box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7), inset 6px 6px 20px rgba(0, 0, 0, 0.1);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd;
 		}
 
 		&:focus {
