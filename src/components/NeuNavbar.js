@@ -54,7 +54,7 @@ const NeuNavbar = props => {
 	const linkStyles = css`
 		box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 7px 7px 20px #a6abbd;
 		cursor: pointer;
-		text-decoration: none;
+		text-decoration: ${props.decoration};
 
 		&:hover {
 			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px #a6abbd;
