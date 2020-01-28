@@ -1,20 +1,21 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { Link, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 const NeuNavbar = props => {
 	const optionalContainerStyles = {
+		display: props.containerDisplay || 'flex',
 		justifyContent: props.containerJustify || 'space-between',
 		alignItems: props.containerAlign || 'center',
-
-		width: props.containerWidth || '80vw',
-		height: props.containerHeight || '15vh',
-
-		backgroundColor: props.containerBgColor || 'ecedf1',
 
 		color: props.containerColor,
 		fontSize: props.containerFontSize || '16px',
 		fontWeight: props.containerFontWeight || 'bolder',
+
+		height: props.containerHeight || '15vh',
+		width: props.containerWidth || '80vw',
+
+		backgroundColor: props.containerBgColor || 'ecedf1',
 
 		margin: props.containerMargin || '0 auto',
 		padding: props.containerPadding || '0 40px',
@@ -23,13 +24,21 @@ const NeuNavbar = props => {
 	};
 
 	const optionalLinkStyles = {
+		color: props.linkColor,
+		fontSize: props.linkFontSize || '16px',
+		fontWeight: props.linkFontWeight || 'bolder',
+
+		height: props.linkHeight,
+		width: props.linkWidth,
+
 		backgroundColor: props.linkBgColor || '#ecedf1',
+
 		padding: props.linkPadding || '10px 15px',
+
 		borderRadius: props.linkRadius || '6px'
 	};
 
 	const containerStyles = css`
-		display: flex;
 		box-shadow: -7px -7px 20px #fafbff, 7px 7px 20px #a6abbd;
 
 		&:hover {
@@ -72,28 +81,32 @@ const NeuNavbar = props => {
 				props.links.map((link, index) => {
 					if (index === 0) {
 						return (
-							<Link
+							<NavLink
 								key={link.to}
-								exact='true'
+								exact={true}
 								to={link.to}
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
-								activeStyle={{ color: props.activeStyle || 'black' }}
+								activeStyle={{
+									boxShadow: 'inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd'
+								}}
 							>
 								{link.text}
-							</Link>
+							</NavLink>
 						);
 					} else {
 						return (
-							<Link
+							<NavLink
 								key={link.to}
 								to={link.to}
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
-								activeStyle={{ color: props.activeStyle || 'black' }}
+								activeStyle={{
+									boxShadow: 'inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd'
+								}}
 							>
 								{link.text}
-							</Link>
+							</NavLink>
 						);
 					}
 				})}
