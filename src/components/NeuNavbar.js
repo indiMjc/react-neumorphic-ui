@@ -24,13 +24,15 @@ const NeuNavbar = props => {
 	};
 
 	const optionalLinkStyles = {
+		// backgroundColor: props.linkBgColor || '#ecedf1',
+		backgroundImage: 'linear-gradient(to bottom right, #ebf5fc, #ecedf1)',
 		padding: props.linkPadding || '10px 15px',
 		borderRadius: props.linkRadius || '6px'
 	};
 
 	const containerStyles = css`
 		display: flex;
-		box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.2);
 
 		&:hover {
 			box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
@@ -43,7 +45,7 @@ const NeuNavbar = props => {
 	`;
 
 	const linkStyles = css`
-		box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 6px 6px 15px rgba(0, 0, 0, 0.2);
 		cursor: pointer;
 		text-decoration: none;
 

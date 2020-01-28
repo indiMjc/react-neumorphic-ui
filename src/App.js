@@ -27,7 +27,13 @@ function App() {
 	return (
 		<div className='App'>
 			<CardWithButton />
-			<NeuButton text={'Submit'} clickFn={testingClick} margin={'2rem 0'} padding={'1rem'} />
+			<NeuButton
+				text={'Submit'}
+				clickFn={testingClick}
+				margin={'2rem 0'}
+				padding={'1rem'}
+				activeStyle={'blue'}
+			/>
 			<NeuNavbar links={links} />
 		</div>
 	);
