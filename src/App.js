@@ -34,7 +34,7 @@ function App() {
 				padding={'1rem'}
 				activeStyle={'blue'}
 			/>
-			<NeuNavbar links={links} decoration={'none'} linkColor={'teal'} />
+			<NeuNavbar links={links} decoration={'none'} linkColor={'teal'} decoration={'underline'} />
 		</div>
 	);
 }
