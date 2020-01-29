@@ -1,3 +1,5 @@
 TODO:
 
--  Add `disabled` state option to `NeuButton` component
+-  Normalize font sizes
+-  Make hover animations optional
+-  Fix input fields

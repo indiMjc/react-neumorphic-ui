@@ -15,6 +15,9 @@ const NeuNavbar = props => {
 		height: props.containerHeight || '15vh',
 		width: props.containerWidth || '80vw',
 
+		minHeight: props.containerMinHeight,
+		minWidth: props.containerMinWidth,
+
 		backgroundColor: props.containerBgColor || '#ebf5fc',
 
 		margin: props.containerMargin || '0 auto',
@@ -34,6 +37,9 @@ const NeuNavbar = props => {
 
 		height: props.linkHeight,
 		width: props.linkWidth,
+
+		minHeight: props.linkMinHeight,
+		minWidth: props.linkMinWidth,
 
 		backgroundColor: props.linkBgColor || '#ebf5fc',
 
