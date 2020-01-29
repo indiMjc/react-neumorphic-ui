@@ -46,7 +46,7 @@ function App() {
 				<NeuButton
 					text={null}
 					color={'teal'}
-					clickFn={testingClick}
+					onClick={testingClick}
 					margin={'1rem auto'}
 					padding={'1rem'}
 					activeStyle={'blue'}

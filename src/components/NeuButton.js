@@ -42,7 +42,7 @@ const NeuButton = props => {
 
 	const handleClick = e => {
 		e.preventDefault();
-		props.clickFn && props.clickFn();
+		props.onClick && props.onClick();
 	};
 
 	return (
