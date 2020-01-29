@@ -7,6 +7,7 @@ const NeuNavbar = props => {
 		display: props.containerDisplay || 'flex',
 		justifyContent: props.containerJustify || 'space-between',
 		alignItems: props.containerAlign || 'center',
+		border: props.containerBorder || '1px solid #dae2e936',
 
 		color: props.containerColor,
 		fontSize: props.containerFontSize || '16px',
@@ -15,7 +16,7 @@ const NeuNavbar = props => {
 		height: props.containerHeight || '15vh',
 		width: props.containerWidth || '80vw',
 
-		backgroundColor: props.containerBgColor || 'ecedf1',
+		backgroundColor: props.containerBgColor || '#ebf5fc',
 
 		margin: props.containerMargin || '0 auto',
 		padding: props.containerPadding || '0 40px',
@@ -27,11 +28,12 @@ const NeuNavbar = props => {
 		color: props.linkColor,
 		fontSize: props.linkFontSize || '16px',
 		fontWeight: props.linkFontWeight || 'bolder',
+		border: props.linkBorder || '1px solid #dae2e936',
 
 		height: props.linkHeight,
 		width: props.linkWidth,
 
-		backgroundColor: props.linkBgColor || '#ecedf1',
+		backgroundColor: props.linkBgColor || '#ebf5fc',
 
 		padding: props.linkPadding || '10px 15px',
 
@@ -39,10 +41,10 @@ const NeuNavbar = props => {
 	};
 
 	const containerStyles = css`
-		box-shadow: -7px -7px 20px #fafbff, 7px 7px 20px #a6abbd;
+		box-shadow: -7px -7px 10px #fafbff, 3px 3px 20px rgba(166, 171, 189, 0.5);
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px #a6abbd;
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.5);
 			transform: scale(0.98);
 		}
 
@@ -52,18 +54,18 @@ const NeuNavbar = props => {
 	`;
 
 	const linkStyles = css`
-		box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 7px 7px 20px #a6abbd;
+		box-shadow: -6px -6px 10px #fafbff, 3px 3px 15px rgba(166, 171, 189, 0.5);
 		cursor: pointer;
 		text-decoration: ${props.decoration};
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px #a6abbd;
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.5);
 			transform: scale(0.98);
 		}
 
 		&:active {
 			color: black;
-			box-shadow: inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd;
+			box-shadow: inset -6px -6px 10px #fafbff, inset 10px 10px 20px rgba(166, 171, 189, 0.5);
 		}
 
 		&:focus {
@@ -88,7 +90,7 @@ const NeuNavbar = props => {
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
 								activeStyle={{
-									boxShadow: 'inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd'
+									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)'
 								}}
 							>
 								{link.text}
@@ -102,7 +104,7 @@ const NeuNavbar = props => {
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
 								activeStyle={{
-									boxShadow: 'inset -6px -6px 10px #fafbff, inset 10px 10px 20px #a6abbd'
+									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)'
 								}}
 							>
 								{link.text}
