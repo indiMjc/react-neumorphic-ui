@@ -7,7 +7,6 @@ const NeuNavbar = props => {
 		display: props.containerDisplay || 'flex',
 		justifyContent: props.containerJustify || 'space-between',
 		alignItems: props.containerAlign || 'center',
-		border: props.containerBorder || '1px solid #dae2e936',
 
 		color: props.containerColor,
 		fontSize: props.containerFontSize || '16px',
@@ -21,6 +20,7 @@ const NeuNavbar = props => {
 		margin: props.containerMargin || '0 auto',
 		padding: props.containerPadding || '0 40px',
 
+		border: props.containerBorder || '1px solid #dae2e936',
 		borderRadius: props.containerRadius || '7px'
 	};
 
@@ -28,7 +28,6 @@ const NeuNavbar = props => {
 		color: props.linkColor,
 		fontSize: props.linkFontSize || '16px',
 		fontWeight: props.linkFontWeight || 'bolder',
-		border: props.linkBorder || '1px solid #dae2e936',
 
 		height: props.linkHeight,
 		width: props.linkWidth,
@@ -37,6 +36,7 @@ const NeuNavbar = props => {
 
 		padding: props.linkPadding || '10px 15px',
 
+		border: props.linkBorder || '1px solid #dae2e936',
 		borderRadius: props.linkRadius || '6px'
 	};
 
@@ -44,7 +44,7 @@ const NeuNavbar = props => {
 		box-shadow: -7px -7px 10px #fafbff, 3px 3px 20px rgba(166, 171, 189, 0.5);
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.5);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
 			transform: scale(0.98);
 		}
 
@@ -59,13 +59,13 @@ const NeuNavbar = props => {
 		text-decoration: ${props.decoration};
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.5);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
 			transform: scale(0.98);
 		}
 
 		&:active {
 			color: black;
-			box-shadow: inset -6px -6px 10px #fafbff, inset 10px 10px 20px rgba(166, 171, 189, 0.5);
+			box-shadow: inset -6px -6px 10px #fafbff, inset 10px 10px 20px rgba(166, 171, 189, 0.25);
 		}
 
 		&:focus {
