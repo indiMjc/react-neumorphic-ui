@@ -36,13 +36,28 @@ function App() {
 				margin={'3rem auto'}
 				width={'25rem'}
 			>
-				<NeuInput type={'text'} placeholder={'Enter email address'} label={'email'} />
-				<NeuInput type={'text'} />
-				<NeuInput type={'text'} />
-				<NeuInput type={'text'} />
-				<NeuInput type={'text'} />
-				<NeuInput type={'text'} />
-				<NeuInput type={'checkbox'} />
+				<NeuInput
+					type={'text'}
+					placeholder={'Enter username'}
+					label={'username: '}
+					containerWidth={'269px'}
+				/>
+				<NeuInput
+					type={'text'}
+					placeholder={'Enter email address'}
+					label={'email: '}
+					containerWidth={'269px'}
+				/>
+				<NeuInput
+					type={'text'}
+					placeholder={'Enter location'}
+					label={'location: '}
+					containerWidth={'269px'}
+				/>
+				<NeuInput type={'text'} placeholder={'Enter role'} label={'role: '} containerWidth={'269px'} />
+				<NeuInput type={'text'} containerWidth={'269px'} />
+				<NeuInput type={'text'} containerWidth={'269px'} />
+				<NeuInput type={'checkbox'} containerWidth={'269px'} />
 				<NeuButton
 					text={null}
 					color={'teal'}
