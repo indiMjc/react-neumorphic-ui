@@ -44,16 +44,24 @@ function App() {
 				<NeuInput type={'text'} />
 				<NeuInput type={'checkbox'} />
 				<NeuButton
-					text={'Submit'}
+					text={null}
 					color={'teal'}
 					clickFn={testingClick}
 					margin={'1rem auto'}
 					padding={'1rem'}
 					activeStyle={'blue'}
-				/>
+				>
+					testing
+				</NeuButton>
 			</NeuCard>
 			<CardWithButton />
-			<NeuNavbar links={links} linkColor={'teal'} decoration={'underline'} />
+			<NeuNavbar
+				links={links}
+				linkColor={'teal'}
+				decoration={'underline'}
+				containerHover={true}
+				linkHover={true}
+			/>
 		</div>
 	);
 }

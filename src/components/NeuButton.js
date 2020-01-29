@@ -53,7 +53,7 @@ const NeuButton = props => {
 			style={{ ...optionalBtnStyles }}
 			onClick={handleClick}
 		>
-			{props.text}
+			{props.text || props.children}
 		</button>
 	);
 };

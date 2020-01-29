@@ -49,12 +49,16 @@ const NeuNavbar = props => {
 		borderRadius: props.linkRadius || '6px'
 	};
 
+	const containerHover =
+		props.containerHover &&
+		`box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
+	transform: scale(0.98);`;
+
 	const containerStyles = css`
 		box-shadow: -7px -7px 10px #fafbff, 3px 3px 20px rgba(166, 171, 189, 0.5);
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
-			transform: scale(0.98);
+			${containerHover}
 		}
 
 		&:focus {
@@ -62,12 +66,17 @@ const NeuNavbar = props => {
 		}
 	`;
 
+	const linkHover =
+		props.linkHover &&
+		`
+	box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
+	transform: scale(0.98);`;
+
 	const linkStyles = css`
 		box-shadow: -6px -6px 10px #fafbff, 3px 3px 15px rgba(166, 171, 189, 0.5);
 
 		&:hover {
-			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
-			transform: scale(0.98);
+			${linkHover}
 		}
 
 		&:active {
