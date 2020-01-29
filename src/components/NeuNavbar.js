@@ -15,6 +15,9 @@ const NeuNavbar = props => {
 		height: props.containerHeight || '15vh',
 		width: props.containerWidth || '80vw',
 
+		minHeight: props.containerMinHeight,
+		minWidth: props.containerMinWidth,
+
 		backgroundColor: props.containerBgColor || '#ebf5fc',
 
 		margin: props.containerMargin || '0 auto',
@@ -28,9 +31,15 @@ const NeuNavbar = props => {
 		color: props.linkColor,
 		fontSize: props.linkFontSize || '16px',
 		fontWeight: props.linkFontWeight || 'bolder',
+		textDecoration: props.decoration || 'none',
+
+		cursor: props.cursor || 'pointer',
 
 		height: props.linkHeight,
 		width: props.linkWidth,
+
+		minHeight: props.linkMinHeight,
+		minWidth: props.linkMinWidth,
 
 		backgroundColor: props.linkBgColor || '#ebf5fc',
 
@@ -55,8 +64,6 @@ const NeuNavbar = props => {
 
 	const linkStyles = css`
 		box-shadow: -6px -6px 10px #fafbff, 3px 3px 15px rgba(166, 171, 189, 0.5);
-		cursor: pointer;
-		text-decoration: ${props.decoration};
 
 		&:hover {
 			box-shadow: inset -6px -6px 10px #fafbff, inset 6px 6px 20px rgba(166, 171, 189, 0.25);
@@ -70,10 +77,6 @@ const NeuNavbar = props => {
 
 		&:focus {
 			outline: 0;
-		}
-
-		&:visited {
-			color: black;
 		}
 	`;
 
@@ -90,7 +93,8 @@ const NeuNavbar = props => {
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
 								activeStyle={{
-									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)'
+									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)',
+									transform: 'scale(0.96)'
 								}}
 							>
 								{link.text}
@@ -104,7 +108,8 @@ const NeuNavbar = props => {
 								css={linkStyles}
 								style={{ ...optionalLinkStyles }}
 								activeStyle={{
-									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)'
+									boxShadow: 'inset -6px -6px 10px white, inset 0 0 25px rgba(166, 171, 189, 0.7)',
+									transform: 'scale(0.96)'
 								}}
 							>
 								{link.text}

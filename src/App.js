@@ -2,6 +2,8 @@ import React from 'react';
 import CardWithButton from './components/CardWithButton';
 import NeuButton from './components/NeuButton';
 import NeuNavbar from './components/NeuNavbar';
+import NeuCard from './components/NeuCard';
+import NeuInput from './components/NeuInput';
 
 const links = [
 	{
@@ -26,15 +28,32 @@ function App() {
 	const testingClick = () => console.log('clicked');
 	return (
 		<div className='App'>
+			<NeuCard
+				display={'flex'}
+				justify={'center'}
+				align={'center'}
+				flexDirection={'column'}
+				margin={'3rem auto'}
+				width={'25rem'}
+			>
+				<NeuInput type={'text'} placeholder={'Enter email address'} label={'email'} />
+				<NeuInput type={'text'} />
+				<NeuInput type={'text'} />
+				<NeuInput type={'text'} />
+				<NeuInput type={'text'} />
+				<NeuInput type={'text'} />
+				<NeuInput type={'checkbox'} />
+				<NeuButton
+					text={'Submit'}
+					color={'teal'}
+					clickFn={testingClick}
+					margin={'1rem auto'}
+					padding={'1rem'}
+					activeStyle={'blue'}
+				/>
+			</NeuCard>
 			<CardWithButton />
-			<NeuButton
-				text={'Submit'}
-				clickFn={testingClick}
-				margin={'2rem 0'}
-				padding={'1rem'}
-				activeStyle={'blue'}
-			/>
-			<NeuNavbar links={links} decoration={'none'} linkColor={'teal'} />
+			<NeuNavbar links={links} linkColor={'teal'} decoration={'underline'} />
 		</div>
 	);
 }

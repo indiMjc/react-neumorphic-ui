@@ -6,6 +6,9 @@ const NeuButton = props => {
 		width: props.width,
 		height: props.height,
 
+		minHeight: props.minHeight || '50px',
+		minWidth: props.minWidth || '50px',
+
 		backgroundColor: props.bgColor || 'rgb(235, 245, 252)',
 
 		color: props.color,
